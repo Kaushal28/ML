@@ -16,8 +16,3 @@ class Utilities(object):
 
     def normalize(self, array):
         return array / 255.0
-
-utils = Utilities()
-X, Y = utils.get_data_from_csv('fashion-mnist_test.csv', 'label')
-X = utils.normalize(X)
-print (X)
